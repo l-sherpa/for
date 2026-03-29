@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyHub International | Your Gateway to Global Education</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Loader -->
+    <div id="loader">
+        <div class="loader-brand">StudyHub</div>
+        <div class="loader-bar-wrap">
+            <div id="loader-bar"></div>
+        </div>
+        <div id="loader-percent">0%</div>
+    </div>
+
+    <!-- Fixed Header -->
+    <header class="site-header">
+        <nav>
+            <div class="logo">StudyHub</div>
+            <ul class="nav-links">
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#success">Success Stories</a></li>
+                <li><a href="#contact" class="nav-cta">Apply Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-standalone">
+        <div class="hero-content">
+            <div class="hero-logo">
+                <img src="logo.jpeg" alt="StudyHub International Logo">
+            </div>
+
+            <h1 class="hero-heading">
+                <span>Your Future</span>
+                <span>Starts Here</span>
+            </h1>
+            <p class="hero-tagline">Discover Your Ideal Study Path with Us. At Study Hub International, we guide you through every step of your educational journey.</p>
+            <a href="#counsellors" class="cta-button">Book Appointment</a>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Canvas for Video Frames - Fixed on Right -->
+    <div class="canvas-wrap">
+        <canvas id="canvas"></canvas>
+    </div>
+
+    <!-- Scroll Container - Left 1/3 only -->
+    <div id="scroll-container">
+
+        <!-- Section 1: What We Do -->
+        <section class="scroll-section section-content section-services-full"
+                 data-enter="5" data-leave="20" data-animation="fade-up">
+            <div class="section-inner">
+                <span class="section-label">001 / What We Do</span>
+                <h2 class="section-heading">Your Story, Our Guidance</h2>
+                <p class="section-body">At Study Hub International, we simplify your educational journey with personalized consulting services. Our dedicated team provides expert guidance on course selection, university applications, and visa processes.</p>
+
+                <div class="service-cards">
+                    <div class="service-card">
+                        <h3>Career Counselling</h3>
+                        <p>Personalized support to help you navigate your career path. Whether you're exploring new opportunities or seeking guidance on professional development, our expert counselors provide tailored advice.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Language Classes</h3>
+                        <p>Expert instruction in IELTS preparation, German, and Korean. Our experienced educators use interactive methods and personalized feedback to help you achieve your language goals.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Visa Processing</h3>
+                        <p>Navigate visa applications with ease. Our experienced team guides you through each step, from gathering documents to completing applications for study or work visas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Countries -->
+        <section class="scroll-section section-content section-countries"
+                 data-enter="25" data-leave="40" data-animation="slide-left">
+            <div class="section-inner">
+                <span class="section-label">002 / Destinations</span>
+                <h2 class="section-heading">Country's Specifications</h2>
+                <p class="section-body">Get detailed information about study destinations.</p>
+
+                <div class="country-cards">
+                    <div class="country-card">
+                        <h3>Korea</h3>
+                        <p>Explore career opportunities and gain expert guidance on building a successful career in Korea.</p>
+                        <a href="#" class="section-link">Learn more</a>
+                    </div>
+                    <div class="country-card">
+                        <h3>Germany</h3>
+                        <p>Learn German or prepare for your career and education in Germany with our expert guidance.</p>
+                        <a href="#" class="section-link">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: About Us -->
+        <section class="scroll-section section-content section-about"
+                 data-enter="45" data-leave="58" data-animation="stagger-up">
+            <div class="section-inner">
+                <span class="section-label">003 / About Us</span>
+                <h2 class="section-heading">Study Hub Group</h2>
+                <p class="section-body">Welcome to Study Hub International Education Consultancy, where we provide expert guidance and support for your educational journey. Our dedicated team offers personalized advice and resources to help you make informed decisions about your studies and career path.</p>
+                <p class="section-body">Whether you're preparing for exams, exploring new educational opportunities, or seeking advice on international education, we are here to assist you every step of the way.</p>
+            </div>
+        </section>
+
+        <!-- Section 4: How It Works -->
+        <section class="scroll-section section-content section-how-it-works"
+                 data-enter="63" data-leave="76" data-animation="clip-reveal">
+            <div class="section-inner">
+                <span class="section-label">004 / Process</span>
+                <h2 class="section-heading">How It Works</h2>
+
+                <div class="steps-list">
+                    <div class="step-item">
+                        <span class="step-number">01</span>
+                        <h3>Find the Right Consultant</h3>
+                        <p>Explore our network of experienced education consultants to find the perfect match for your academic and career goals.</p>
+                    </div>
+                    <div class="step-item">
+                        <span class="step-number">02</span>
+                        <h3>Set Up Your Consultation</h3>
+                        <p>Choose a convenient date and time for your consultation. Our team will ensure a seamless scheduling process.</p>
+                    </div>
+                    <div class="step-item">
+                        <span class="step-number">03</span>
+                        <h3>Achieve Your Educational Goals</h3>
+                        <p>Benefit from customized strategies and advice from our expert consultants. We are dedicated to helping you succeed.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Why Choose Us -->
+        <section class="scroll-section section-content section-why-us"
+                 data-enter="75" data-leave="96" data-animation="scale-up">
+            <div class="section-inner">
+                <span class="section-label">005 / Why Us</span>
+                <h2 class="section-heading">Why Choose Us</h2>
+                <p class="section-body">Discover why Study Hub International is the ideal partner for your educational journey.</p>
+
+                <div class="features-grid">
+                    <div class="feature"><span class="feature-icon">◆</span> Expert Educational Consultants</div>
+                    <div class="feature"><span class="feature-icon">◆</span> Personalized Guidance</div>
+                    <div class="feature"><span class="feature-icon">◆</span> Comprehensive Resources</div>
+                    <div class="feature"><span class="feature-icon">◆</span> Easy Consultation Booking</div>
+                </div>
+
+                <div class="university-partner">
+                    <h4>Our University Partner</h4>
+                    <div class="partner-name">Dong-eui University</div>
+                    <div class="partner-location">South Korea</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: Meet Our Counsellors -->
+        <section id="counsellors" class="scroll-section section-content section-counsellors"
+                 data-enter="96" data-leave="100" data-animation="stagger-up" data-persist="true">
+            <div class="section-inner">
+                <span class="section-label">006 / Team</span>
+                <h2 class="section-heading">Meet Our Counsellors</h2>
+                <p class="section-body">Get to know our dedicated team of expert counsellors. They are here to guide you every step of the way.</p>
+
+                <div class="counsellor-cards">
+                    <div class="counsellor-card">
+                        <div class="counsellor-avatar">AK</div>
+                        <h3>Mr. Anup Kadel</h3>
+                        <p class="counsellor-title">Germany/Europe Counsellor</p>
+                    </div>
+                    <div class="counsellor-card">
+                        <div class="counsellor-avatar">AK</div>
+                        <h3>Mr. Anish Kadel</h3>
+                        <p class="counsellor-title">South Korea/Australia Counsellor</p>
+                    </div>
+                    <div class="counsellor-card">
+                        <div class="counsellor-avatar">RB</div>
+                        <h3>Mr. Rujan Bimali</h3>
+                        <p class="counsellor-title">UK/USA Counsellor</p>
+                    </div>
+                </div>
+
+                <a href="mailto:studyhub450@gmail.com" class="cta-button">Book Appointment</a>
+
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <span class="contact-label">Email</span>
+                        <a href="mailto:studyhub450@gmail.com">studyhub450@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">Phone</span>
+                        <span>01-4547878 / +977 9860467717</span>
+                    </div>
+                </div>
+
+                <div class="copyright">
+                    <p>© 2024 - 2026 Study Hub International. All rights reserved.</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1/dist/lenis.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
