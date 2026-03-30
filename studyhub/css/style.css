@@ -1741,7 +1741,7 @@ button {
 
   .floating-card.card-2 {
     justify-content: flex-end;
-    margin-top: 0.5rem;
+    margin-top: -0.5rem;
   }
 
   .sticker-image {
@@ -1926,7 +1926,7 @@ button {
   }
 
   .floating-card.card-2 {
-    margin-top: 0.35rem;
+    margin-top: -0.35rem;
   }
 
   .sticker-image {
@@ -2058,7 +2058,7 @@ html {
 
 /* Card 2 - Top Rated */
 .card-2 {
-  bottom: 15%;
+  bottom: 25%;
   left: -5px;
   animation-delay: 3s;
 }
