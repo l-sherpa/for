@@ -1790,7 +1790,7 @@ button {
   }
 
   .scroll-hint {
-    bottom: 0.5rem;
+    display: none;
   }
 
   .about-section {
