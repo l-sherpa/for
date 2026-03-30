@@ -1785,6 +1785,30 @@ button {
     align-items: center;
   }
 
+  .hero-section {
+    padding-bottom: 4rem;
+  }
+
+  .scroll-hint {
+    bottom: 0.5rem;
+  }
+
+  .about-section {
+    margin-top: var(--space-xl);
+  }
+
+  .about-visual {
+    margin-bottom: var(--space-lg);
+  }
+
+  .partner-badge {
+    position: relative;
+    bottom: auto;
+    right: auto;
+    margin: var(--space-lg) auto 0;
+    align-self: center;
+  }
+
   .destinations-header {
     grid-template-columns: 1fr;
     text-align: center;
@@ -1907,13 +1931,6 @@ button {
 
   .footer-column {
     align-items: center;
-  }
-
-  .partner-badge {
-    position: relative;
-    bottom: auto;
-    right: auto;
-    margin-top: var(--space-md);
   }
 
   .glass-card {
