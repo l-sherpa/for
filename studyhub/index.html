@@ -3,308 +3,534 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StudyHub International | 21st Century Creative Studio</title>
+    <title>StudyHub International | Your Trusted Consulting Partner</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Dark Overlay for Stats -->
-    <div id="dark-overlay"></div>
-
-    <!-- Horizontal Marquee -->
-    <div class="marquee-wrap" data-scroll-speed="-35">
-        <div class="marquee-text">GLOBAL EDUCATION • STUDY ABROAD • YOUR FUTURE • STUDYHUB INTERNATIONAL •</div>
-    </div>
-
-    <!-- Loader -->
-    <div id="loader">
-        <div class="loader-brand">StudyHub</div>
-        <div class="loader-bar-wrap">
-            <div id="loader-bar"></div>
+    <!-- Navigation -->
+    <header class="main-nav" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <img src="logo.jpeg" alt="StudyHub" class="logo-image">
+                <span class="logo-text">StudyHub</span>
+            </a>
+            <nav class="nav-menu">
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#destinations" class="nav-link">Destinations</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#team" class="nav-link">Team</a>
+                <a href="#contact" class="nav-cta">Get Started</a>
+            </nav>
+            <button class="mobile-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
-        <div id="loader-percent">0%</div>
-    </div>
-
-    <!-- Fixed Header -->
-    <header class="site-header">
-        <nav>
-            <div class="logo magnetic" data-magnetic>StudyHub</div>
-            <ul class="nav-links">
-                <li><a href="#destinations" class="magnetic" data-magnetic>Destinations</a></li>
-                <li><a href="#services" class="magnetic" data-magnetic>Services</a></li>
-                <li><a href="#success" class="magnetic" data-magnetic>Success Stories</a></li>
-                <li><a href="#contact" class="nav-cta magnetic" data-magnetic>Apply Now</a></li>
-            </ul>
-        </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero-standalone">
-        <div class="hero-content">
-            <span class="section-label hero-label">StudyHub International</span>
-
-            <h1 class="hero-heading">
-                <span class="word">Your</span> <span class="word">Future</span><br>
-                <span class="word accent">Starts</span> <span class="word accent">Here</span>
-            </h1>
-            <p class="hero-tagline">Discover Your Ideal Study Path with Us. At Study Hub International, we guide you through every step of your educational journey.</p>
-            <a href="#counsellors" class="cta-button">Book Appointment</a>
-        </div>
-        <div class="scroll-indicator">
-            <span>Scroll</span>
-            <div class="scroll-arrow"></div>
-        </div>
-    </section>
-
-    <!-- Canvas for Video Frames - Fixed on Right -->
-    <div class="canvas-wrap">
-        <canvas id="canvas"></canvas>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#services" class="mobile-link">Services</a>
+        <a href="#destinations" class="mobile-link">Destinations</a>
+        <a href="#about" class="mobile-link">About</a>
+        <a href="#team" class="mobile-link">Team</a>
+        <a href="#contact" class="mobile-cta">Get Started</a>
     </div>
 
-    <!-- Scroll Container - 800vh for smooth scroll experience -->
-    <div id="scroll-container" style="height: 800vh;">
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+        <!-- Animated Background Orbs -->
+        <div class="hero-orb orb-1"></div>
+        <div class="hero-orb orb-2"></div>
+        <div class="hero-orb orb-3"></div>
 
-        <!-- Section 1: What We Do -->
-        <section class="scroll-section section-content section-services-full align-left"
-                 data-enter="15" data-leave="28" data-animation="fade-up">
-            <div class="section-inner">
-                <span class="section-label">001 / What We Do</span>
-                <h2 class="section-heading">Your Story, Our Guidance</h2>
-                <p class="section-body">At Study Hub International, we simplify your educational journey with personalized consulting services. Our dedicated team provides expert guidance on course selection, university applications, and visa processes.</p>
-
-                <div class="service-list">
-                    <div class="service-item">
-                        <span class="service-num">01</span>
-                        <div class="service-info">
-                            <h3>Career Counselling</h3>
-                            <p>Personalized support to help you navigate your career path.</p>
-                        </div>
-                    </div>
-                    <div class="service-item">
-                        <span class="service-num">02</span>
-                        <div class="service-info">
-                            <h3>Language Classes</h3>
-                            <p>Expert instruction in IELTS, German, and Korean.</p>
-                        </div>
-                    </div>
-                    <div class="service-item">
-                        <span class="service-num">03</span>
-                        <div class="service-info">
-                            <h3>Visa Processing</h3>
-                            <p>Navigate visa applications with expert guidance.</p>
-                        </div>
-                    </div>
+        <div class="hero-grid">
+            <div class="hero-content">
+                <div class="hero-label reveal-up" data-delay="0">Est. 2020 • Kathmandu, Nepal</div>
+                <h1 class="hero-title">
+                    <span class="title-line reveal-up" data-delay="100">Your Gateway to</span>
+                    <span class="title-line accent reveal-up" data-delay="200">Global Education</span>
+                </h1>
+                <p class="hero-description reveal-up" data-delay="300">
+                    StudyHub International is your trusted partner for studying abroad. We guide Nepali students through every step of their educational journey—from career counseling to visa approval.
+                </p>
+                <div class="hero-actions reveal-up" data-delay="400">
+                    <a href="#contact" class="btn-primary magnetic-btn">Book Free Consultation</a>
+                    <a href="#destinations" class="btn-secondary magnetic-btn">Explore Destinations</a>
                 </div>
-            </div>
-        </section>
-
-        <!-- Section 2: Countries -->
-        <section id="destinations" class="scroll-section section-content section-countries align-right"
-                 data-enter="32" data-leave="45" data-animation="slide-right">
-            <div class="section-inner">
-                <span class="section-label">002 / Destinations</span>
-                <h2 class="section-heading">Global Horizons</h2>
-                <p class="section-body">Explore world-class education destinations. Each country offers unique opportunities for academic and personal growth.</p>
-
-                <div class="country-list">
-                    <div class="country-item">
-                        <span class="country-code">KR</span>
-                        <div class="country-info">
-                            <h3>South Korea</h3>
-                            <p>Cutting-edge technology meets rich cultural heritage.</p>
-                        </div>
-                    </div>
-                    <div class="country-item">
-                        <span class="country-code">DE</span>
-                        <div class="country-info">
-                            <h3>Germany</h3>
-                            <p>Tuition-free excellence in engineering.</p>
-                        </div>
-                    </div>
-                    <div class="country-item">
-                        <span class="country-code">AU</span>
-                        <div class="country-info">
-                            <h3>Australia</h3>
-                            <p>World-class education, stunning environment.</p>
-                        </div>
-                    </div>
-                    <div class="country-item">
-                        <span class="country-code">UK</span>
-                        <div class="country-info">
-                            <h3>United Kingdom</h3>
-                            <p>Centuries of academic excellence.</p>
-                        </div>
-                    </div>
-                    <div class="country-item">
-                        <span class="country-code">US</span>
-                        <div class="country-info">
-                            <h3>United States</h3>
-                            <p>Ivy League prestige and research excellence.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Section 3: Stats with Dark Overlay -->
-        <section class="scroll-section section-stats"
-                 data-enter="48" data-leave="62" data-animation="stagger-up" data-dark-overlay="true">
-            <div class="section-inner">
-                <span class="section-label">003 / Impact</span>
-                <h2 class="section-heading">Our Numbers</h2>
-
-                <div class="stats-grid">
-                    <div class="stat-item">
-                        <span class="stat-number" data-value="5000" data-decimals="0">0</span>
-                        <span class="stat-suffix">+</span>
+                <div class="hero-stats reveal-up" data-delay="500">
+                    <div class="stat">
+                        <span class="stat-number">5000+</span>
                         <span class="stat-label">Students Helped</span>
                     </div>
-                    <div class="stat-item">
-                        <span class="stat-number" data-value="98" data-decimals="0">0</span>
-                        <span class="stat-suffix">%</span>
+                    <div class="stat">
+                        <span class="stat-number">98%</span>
                         <span class="stat-label">Success Rate</span>
                     </div>
-                    <div class="stat-item">
-                        <span class="stat-number" data-value="50" data-decimals="0">0</span>
-                        <span class="stat-suffix">+</span>
+                    <div class="stat">
+                        <span class="stat-number">50+</span>
                         <span class="stat-label">Partner Universities</span>
                     </div>
                 </div>
             </div>
-        </section>
-
-        <!-- Section 4: About -->
-        <section class="scroll-section section-content section-about align-left"
-                 data-enter="60" data-leave="72" data-animation="rotate-in">
-            <div class="section-inner">
-                <span class="section-label">004 / Philosophy</span>
-                <h2 class="section-heading">Beyond Boundaries</h2>
-                <p class="section-body">Welcome to Study Hub International Education Consultancy, where we provide expert guidance and support for your educational journey. Our dedicated team offers personalized advice and resources to help you make informed decisions.</p>
-                <p class="section-body">Whether you're preparing for exams, exploring new opportunities, or seeking advice on international education, we are here to assist you every step of the way.</p>
-            </div>
-        </section>
-
-        <!-- Section 5: How It Works -->
-        <section class="scroll-section section-content section-how-it-works align-right"
-                 data-enter="70" data-leave="82" data-animation="clip-reveal">
-            <div class="section-inner">
-                <span class="section-label">005 / Process</span>
-                <h2 class="section-heading">Your Journey</h2>
-
-                <div class="steps-list">
-                    <div class="step-item">
-                        <span class="step-number">01</span>
-                        <h3>Discovery</h3>
-                        <p>Explore our network of experienced education consultants.</p>
+            <div class="hero-visual">
+                <div class="hero-image-wrapper">
+                    <div class="hero-image">
+                        <img src="new%20logo.png" alt="StudyHub International" loading="eager" onerror="this.src='new%20logo.png'">
                     </div>
-                    <div class="step-item">
-                        <span class="step-number">02</span>
-                        <h3>Connection</h3>
-                        <p>Schedule your consultation at your convenience.</p>
-                    </div>
-                    <div class="step-item">
-                        <span class="step-number">03</span>
-                        <h3>Success</h3>
-                        <p>Receive customized strategies for your success.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Section 6: Why Choose Us -->
-        <section class="scroll-section section-content section-why-us align-left"
-                 data-enter="80" data-leave="92" data-animation="scale-up">
-            <div class="section-inner">
-                <span class="section-label">006 / Why Us</span>
-                <h2 class="section-heading">The Difference</h2>
-                <p class="section-body">Discover why Study Hub International is the ideal partner for your educational journey.</p>
-
-                <div class="features-list">
-                    <div class="feature-item">
-                        <span class="feature-icon">→</span>
-                        <span class="feature-text">Expert Educational Consultants</span>
-                    </div>
-                    <div class="feature-item">
-                        <span class="feature-icon">→</span>
-                        <span class="feature-text">Personalized Guidance</span>
-                    </div>
-                    <div class="feature-item">
-                        <span class="feature-icon">→</span>
-                        <span class="feature-text">Comprehensive Resources</span>
-                    </div>
-                    <div class="feature-item">
-                        <span class="feature-icon">→</span>
-                        <span class="feature-text">Easy Consultation Booking</span>
-                    </div>
-                </div>
-
-                <div class="university-partner">
-                    <h4>Our University Partner</h4>
-                    <div class="partner-name">Dong-eui University</div>
-                    <div class="partner-location">South Korea</div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Section 7: Meet Our Counsellors -->
-        <section id="counsellors" class="scroll-section section-content section-counsellors align-right"
-                 data-enter="90" data-leave="100" data-animation="stagger-up" data-persist="true">
-            <div class="section-inner">
-                <span class="section-label">007 / Team</span>
-                <h2 class="section-heading">Meet Our Counsellors</h2>
-                <p class="section-body">Get to know our dedicated team of expert counsellors ready to guide you.</p>
-
-                <div class="counsellor-list">
-                    <div class="counsellor-item">
-                        <span class="counsellor-initials">AK</span>
-                        <div class="counsellor-info">
-                            <h3>Mr. Anup Kadel</h3>
-                            <p>Germany/Europe Counsellor</p>
+                    <div class="floating-card card-1">
+                        <div class="sticker-image">
+                            <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=150&q=80" alt="Visa Approved">
+                        </div>
+                        <div class="sticker-content">
+                            <span class="sticker-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                    <polyline points="9 12 12 15 16 10"/>
+                                </svg>
+                            </span>
+                            <span class="sticker-text">Visa Approved</span>
                         </div>
                     </div>
-                    <div class="counsellor-item">
-                        <span class="counsellor-initials">AK</span>
-                        <div class="counsellor-info">
-                            <h3>Mr. Anish Kadel</h3>
-                            <p>South Korea/Australia Counsellor</p>
+                    <div class="floating-card card-2">
+                        <div class="sticker-image">
+                            <img src="https://images.unsplash.com/photo-1543286386-713bdd548da4?w=150&q=80" alt="Top Rated">
                         </div>
-                    </div>
-                    <div class="counsellor-item">
-                        <span class="counsellor-initials">RB</span>
-                        <div class="counsellor-info">
-                            <h3>Mr. Rujan Bimali</h3>
-                            <p>UK/USA Counsellor</p>
+                        <div class="sticker-content">
+                            <span class="sticker-icon star-icon">
+                                <svg viewBox="0 0 24 24" fill="url(#goldGradient)" stroke="#b8860b" stroke-width="0.5">
+                                    <defs>
+                                        <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" style="stop-color:#ffd700;stop-opacity:1" />
+                                            <stop offset="50%" style="stop-color:#ffed4e;stop-opacity:1" />
+                                            <stop offset="100%" style="stop-color:#daa520;stop-opacity:1" />
+                                        </linearGradient>
+                                    </defs>
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                                </svg>
+                            </span>
+                            <span class="sticker-text">Top Rated</span>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="scroll-hint">
+            <span>Scroll to explore</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
 
-                <a href="mailto:studyhub450@gmail.com" class="cta-button">Book Appointment</a>
+    <!-- Services Section -->
+    <section class="services-section" id="services">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-eyebrow reveal-up">What We Offer</span>
+                <h2 class="section-title reveal-up">Comprehensive Support<br>for Your Journey</h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card glass-card" data-service="counseling">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Career Counseling</h3>
+                    <p class="service-description">Personalized guidance to help you navigate your career path and choose the right course and university aligned with your goals.</p>
+                    <span class="service-number">01</span>
+                </div>
+                <div class="service-card glass-card" data-service="language">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Language Classes</h3>
+                    <p class="service-description">Expert instruction in IELTS, German, and Korean to prepare you for language proficiency requirements of your target country.</p>
+                    <span class="service-number">02</span>
+                </div>
+                <div class="service-card glass-card" data-service="visa">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Visa Processing</h3>
+                    <p class="service-description">Navigate complex visa applications with expert guidance. We handle documentation, interviews, and ensure high approval rates.</p>
+                    <span class="service-number">03</span>
+                </div>
+                <div class="service-card glass-card" data-service="admission">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 14l9-5-9-5-9 5 9 5z"/>
+                            <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Admission Support</h3>
+                    <p class="service-description">End-to-end assistance with university applications, SOP writing, recommendation letters, and scholarship opportunities.</p>
+                    <span class="service-number">04</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                <div class="contact-details">
-                    <div class="contact-item">
-                        <span class="contact-label">Email</span>
+    <!-- Destinations Section -->
+    <section class="destinations-section" id="destinations">
+        <div class="section-container">
+            <div class="destinations-header">
+                <div class="destinations-title-group">
+                    <span class="section-eyebrow reveal-up">Study Destinations</span>
+                    <h2 class="section-title reveal-up">World-Class Education<br>Awaits You</h2>
+                </div>
+                <p class="destinations-intro reveal-up">Explore top-tier education destinations. Each country offers unique opportunities for academic excellence and personal growth.</p>
+            </div>
+            <div class="destinations-grid">
+                <article class="destination-card glass-card" data-country="kr">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1538669716095-09471c8c6c7a?w=600&q=80" alt="South Korea" onerror="this.src='https://images.unsplash.com/photo-1517154421773-0529f29ea451?w=600&q=80'">
+                        <div class="destination-overlay"></div>
+                    </div>
+                    <div class="destination-content">
+                        <span class="destination-code">KR</span>
+                        <h3 class="destination-name">South Korea</h3>
+                        <p class="destination-description">Cutting-edge technology meets rich cultural heritage. Home to K-pop, K-drama, and world-leading universities.</p>
+                        <ul class="destination-highlights">
+                            <li>STEM Excellence</li>
+                            <li>Scholarship Programs</li>
+                            <li>Vibrant Culture</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="destination-card glass-card" data-country="de">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=600&q=80" alt="Germany" onerror="this.src='https://images.unsplash.com/photo-1595867818082-083862f3d630?w=600&q=80'">
+                        <div class="destination-overlay"></div>
+                    </div>
+                    <div class="destination-content">
+                        <span class="destination-code">DE</span>
+                        <h3 class="destination-name">Germany</h3>
+                        <p class="destination-description">Tuition-free excellence in engineering and innovation. Europe's economic powerhouse with top-ranked technical universities.</p>
+                        <ul class="destination-highlights">
+                            <li>No Tuition Fees</li>
+                            <li>Engineering Hub</li>
+                            <li>Strong Economy</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="destination-card glass-card" data-country="au">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?w=600&q=80" alt="Australia" onerror="this.src='https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?w=600&q=80'">
+                        <div class="destination-overlay"></div>
+                    </div>
+                    <div class="destination-content">
+                        <span class="destination-code">AU</span>
+                        <h3 class="destination-name">Australia</h3>
+                        <p class="destination-description">World-class education in a stunning environment. High quality of life with excellent post-study work opportunities.</p>
+                        <ul class="destination-highlights">
+                            <li>Top Universities</li>
+                            <li>Work Rights</li>
+                            <li>Quality of Life</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="destination-card glass-card" data-country="uk">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=600&q=80" alt="United Kingdom" onerror="this.src='https://images.unsplash.com/photo-1494922275507-269feda38b4b?w=600&q=80'">
+                        <div class="destination-overlay"></div>
+                    </div>
+                    <div class="destination-content">
+                        <span class="destination-code">UK</span>
+                        <h3 class="destination-name">United Kingdom</h3>
+                        <p class="destination-description">Centuries of academic excellence. Home to Oxford, Cambridge, and a tradition of world-changing education.</p>
+                        <ul class="destination-highlights">
+                            <li>Prestigious Degrees</li>
+                            <li>Shorter Courses</li>
+                            <li>Global Recognition</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="destination-card glass-card" data-country="us">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?w=600&q=80" alt="United States" onerror="this.src='https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=600&q=80'">
+                        <div class="destination-overlay"></div>
+                    </div>
+                    <div class="destination-content">
+                        <span class="destination-code">US</span>
+                        <h3 class="destination-name">United States</h3>
+                        <p class="destination-description">Ivy League prestige and research excellence. The world's largest hub for innovation and diverse educational opportunities.</p>
+                        <ul class="destination-highlights">
+                            <li>Ivy League Schools</li>
+                            <li>Research Opportunities</li>
+                            <li>Diverse Campuses</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="section-container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <span class="section-eyebrow">About StudyHub</span>
+                    <h2 class="section-title">Guiding Dreams,<br>Building Futures</h2>
+                    <div class="about-text">
+                        <p>Founded in 2020 in Kathmandu, Nepal, StudyHub International Education Consultancy has grown to become one of the most trusted names in overseas education consulting. Our mission is simple: to help Nepali students access world-class education opportunities abroad.</p>
+                        <p>We understand that studying abroad is a life-changing decision. That's why our dedicated team provides personalized guidance at every step—from initial counseling sessions to pre-departure briefings.</p>
+                    </div>
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <span class="feature-check">✓</span>
+                            <span>Personalized Guidance</span>
+                        </div>
+                        <div class="about-feature">
+                            <span class="feature-check">✓</span>
+                            <span>Experienced Counselors</span>
+                        </div>
+                        <div class="about-feature">
+                            <span class="feature-check">✓</span>
+                            <span>High Success Rate</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=700&q=80" alt="Students studying together" onerror="this.src='https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=700&q=80'">
+                    </div>
+                    <div class="partner-badge">
+                        <div class="partner-image-bg">
+                            <img src="dongeui-university.jpg" alt="Dong-eui University Campus">
+                        </div>
+                        <div class="partner-image-front">
+                            <img src="https://images.unsplash.com/photo-1523240795612-9a1b9c5d15f5?w=300&q=80" alt="Students at Dong-eui University" onerror="this.src='https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=300&q=80'">
+                        </div>
+                        <div class="badge-icon">🏛️</div>
+                        <span class="badge-label">Official Partner</span>
+                        <span class="badge-name">Dong-eui University</span>
+                        <span class="badge-location">South Korea</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section" id="team">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-eyebrow">Our Experts</span>
+                <h2 class="section-title">Meet Your Counsellors</h2>
+            </div>
+            <div class="team-grid">
+                <article class="team-card glass-card">
+                    <div class="team-avatar">
+                        <span class="avatar-initials">AK</span>
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Mr. Anup Kadel</h3>
+                        <p class="team-role">Germany & Europe Specialist</p>
+                        <p class="team-bio">Expert in German and European university admissions with deep knowledge of DAAD scholarships and tuition-free education.</p>
+                        <div class="team-countries">
+                            <span class="country-tag">Germany</span>
+                            <span class="country-tag">Europe</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="team-card glass-card">
+                    <div class="team-avatar">
+                        <span class="avatar-initials">AK</span>
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Mr. Anish Kadel</h3>
+                        <p class="team-role">Korea & Australia Specialist</p>
+                        <p class="team-bio">Specialized in Korean university partnerships and Australian student visa processing with GTE expertise.</p>
+                        <div class="team-countries">
+                            <span class="country-tag">South Korea</span>
+                            <span class="country-tag">Australia</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="team-card glass-card">
+                    <div class="team-avatar">
+                        <span class="avatar-initials">RB</span>
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Mr. Rujan Bimali</h3>
+                        <p class="team-role">UK & USA Specialist</p>
+                        <p class="team-bio">Expert in Ivy League and Russell Group university admissions with extensive experience in scholarship applications.</p>
+                        <div class="team-countries">
+                            <span class="country-tag">UK</span>
+                            <span class="country-tag">USA</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process-section">
+        <div class="section-container">
+            <div class="process-header">
+                <span class="section-eyebrow">How It Works</span>
+                <h2 class="section-title">Your Journey to Success</h2>
+            </div>
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Free Consultation</h3>
+                        <p class="step-description">Book a free session to discuss your goals, academic background, and preferred destinations.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Profile Assessment</h3>
+                        <p class="step-description">We evaluate your profile and recommend the best universities and programs suited to you.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Application Support</h3>
+                        <p class="step-description">Complete assistance with applications, SOPs, recommendations, and document preparation.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Visa & Departure</h3>
+                        <p class="step-description">Visa application support, interview preparation, and pre-departure guidance.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="section-container">
+            <div class="contact-grid">
+                <div class="contact-content">
+                    <span class="section-eyebrow">Get In Touch</span>
+                    <h2 class="section-title">Start Your Journey<br>Today</h2>
+                    <p class="contact-description">Ready to take the first step towards your global education? Book a free consultation with our expert counsellors.</p>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <span class="contact-label">Email</span>
+                            <a href="mailto:studyhub450@gmail.com" class="contact-value">studyhub450@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label">Phone</span>
+                            <div class="contact-value">
+                                <a href="tel:01-4547878">01-4547878</a>
+                                <span class="contact-separator">/</span>
+                                <a href="tel:+9779860467717">+977 9860467717</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label">Address</span>
+                            <span class="contact-value">Kathmandu, Nepal</span>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <a href="https://www.facebook.com/profile.php?id=61557927064505" target="_blank" class="social-link" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper glass-card">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required placeholder="Your full name">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required placeholder="your@email.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+977">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="destination">Preferred Destination</label>
+                            <select id="destination" name="destination">
+                                <option value="">Select a country</option>
+                                <option value="korea">South Korea</option>
+                                <option value="germany">Germany</option>
+                                <option value="australia">Australia</option>
+                                <option value="uk">United Kingdom</option>
+                                <option value="usa">United States</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Tell us about your educational goals..."></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary btn-full">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="section-container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">
+                        <img src="logo.jpeg" alt="StudyHub" class="logo-image">
+                        <span class="logo-text">StudyHub</span>
+                    </a>
+                    <p class="footer-tagline">Your Trusted Consulting Partner for Global Education</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 class="footer-heading">Services</h4>
+                        <a href="#services">Career Counseling</a>
+                        <a href="#services">Language Classes</a>
+                        <a href="#services">Visa Processing</a>
+                        <a href="#services">Admission Support</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-heading">Destinations</h4>
+                        <a href="#destinations">South Korea</a>
+                        <a href="#destinations">Germany</a>
+                        <a href="#destinations">Australia</a>
+                        <a href="#destinations">UK & USA</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-heading">Contact</h4>
                         <a href="mailto:studyhub450@gmail.com">studyhub450@gmail.com</a>
+                        <a href="tel:+9779860467717">+977 9860467717</a>
+                        <span>Kathmandu, Nepal</span>
                     </div>
-                    <div class="contact-item">
-                        <span class="contact-label">Phone</span>
-                        <span>01-4547878 / +977 9860467717</span>
-                    </div>
-                </div>
-
-                <div class="copyright">
-                    <p>© 2024 - 2026 Study Hub International. All rights reserved.</p>
                 </div>
             </div>
-        </section>
+            <div class="footer-bottom">
+                <p class="copyright">© 2024 StudyHub International. All rights reserved.</p>
+                <a href="#hero" class="back-to-top">
+                    <span>Back to top</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 19V5M5 12l7-7 7 7"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
 
-    </div>
-
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/lenis@1/dist/lenis.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
     <script src="js/app.js"></script>
 </body>
 </html>
