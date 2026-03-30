@@ -1721,7 +1721,68 @@ button {
   }
 
   .floating-card {
-    display: none;
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    width: auto;
+    height: auto;
+    animation: none;
+    margin-top: 1rem;
+  }
+
+  .floating-card.card-1 {
+    justify-content: flex-start;
+  }
+
+  .floating-card.card-2 {
+    justify-content: flex-end;
+    margin-top: 0.5rem;
+  }
+
+  .sticker-image {
+    position: relative;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid var(--color-accent);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  }
+
+  .sticker-content {
+    position: relative;
+    bottom: auto;
+    right: auto;
+    background: linear-gradient(135deg, var(--color-accent), var(--color-secondary));
+    border-radius: 20px;
+    padding: 0.5rem 0.85rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    box-shadow: 0 4px 15px rgba(244, 162, 97, 0.4);
+    white-space: nowrap;
+  }
+
+  .sticker-icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .sticker-text {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--color-bg);
+  }
+
+  .hero-image-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .destinations-header {
@@ -1857,6 +1918,34 @@ button {
 
   .glass-card {
     border-radius: 20px;
+  }
+
+  .floating-card {
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+  }
+
+  .floating-card.card-2 {
+    margin-top: 0.35rem;
+  }
+
+  .sticker-image {
+    width: 40px;
+    height: 40px;
+  }
+
+  .sticker-content {
+    padding: 0.4rem 0.7rem;
+    gap: 0.35rem;
+  }
+
+  .sticker-icon {
+    width: 14px;
+    height: 14px;
+  }
+
+  .sticker-text {
+    font-size: 0.7rem;
   }
 }
 
